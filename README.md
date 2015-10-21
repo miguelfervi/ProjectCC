@@ -6,7 +6,7 @@ El proyecto [participará](http://imgur.com/Nx9cLxd) en el certamen de Proyectos
 
 Los intregantes son:
 
-* José Cristóbal López Zafra
+* [José Cristóbal López Zafra](https://github.com/JCristobal)
 * Miguel Fernández Villegas
 * Hans Manuel Grenner Noguerón
 * Yuan Tian
