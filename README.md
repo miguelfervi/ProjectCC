@@ -5,6 +5,7 @@
 ### Submódulo perteneciente al [proyecto principal PeriodicoInteractivo](https://github.com/ProyectCC/PeriodicoInteractivo)
 
 
+[![Build Status](https://travis-ci.org/JCristobal/ProjectCC.svg?branch=master)](https://travis-ci.org/JCristobal/ProjectCC)
 
 Los intregantes son:
 
