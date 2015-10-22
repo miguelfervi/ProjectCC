@@ -1,12 +1,14 @@
-# ProjectCC
+# ProjectCC - PeriodicoInteractivo
 
+### Proyecto desarrollado en la asignatura [CC](https://github.com/JJ/clases-CC-2015-16/)
 
-El proyecto [participará](http://imgur.com/Nx9cLxd) en el certamen de Proyectos Libres de la UGR 2015-2016, con las [bases](https://docs.google.com/document/d/16UsdUV_XXuPUh-Imz4PSgh-2ES_YaAJpZ8fNrbTVpMA/edit).
+### Submódulo perteneciente al [proyecto principal PeriodicoInteractivo](https://github.com/ProyectCC/PeriodicoInteractivo)
+
 
 
 Los intregantes son:
 
 * [José Cristóbal López Zafra](https://github.com/JCristobal)
 * [Miguel Fernández Villegas](https://github.com/miguelfervi)
-* Hans Manuel Grenner Noguerón
-* Yuan Tian
+* [Hans Manuel Grenner Noguerón](https://github.com/enpi)
+* [Yuan Tian](https://github.com/tianyuan87)
