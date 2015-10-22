@@ -1,0 +1,15 @@
+{
+  "name": "ProyectCC-PeriodicoInteractivo",
+
+  "version": "0.0.1",
+
+  "author": "JCristobal",
+
+  "description": "Proyecto de MII en Granada: Periódico web interactivo",
+
+  "keywords": ["CC, periodico"],
+
+  "scripts": {
+    "test": "mocha"
+  }
+}
