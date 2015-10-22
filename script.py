@@ -23,6 +23,7 @@ urls = ( '/logout', 'logout',
     )
 
 # Consumer keys and access tokens, used for OAuth
+# Pendiente de arreglar (ocultar keys)
 consumer_key = 'UbeG6c5YaR1a7gZYdLqqr7fFN'
 consumer_secret = 'BTrE1bbvDz6SuxKxlKF1mHof955YheUjb7gzGoLk590fF4BpIQ'
 access_token = '519720537-MsyxcBoaLUES8U0ECtzinEQ9ivbTMRO4CHBLtk98'
@@ -53,6 +54,7 @@ except pymongo.errors.ConnectionFailure, e:
     print "Error al conectar con MongoDB: %s" % e
 
 
+#Elementos del formulario
 dias=range(1,32)
 meses=range(1,13)
 anios=range(1915,2015)
@@ -101,7 +103,7 @@ form_twitter_eventos = form.Form(
     form.Button('Buscar', id="boton_evento")
 )
 
-
+# clase donde definimos el registro de usuario
 class registro:
     def GET(self):
         res=""
@@ -168,7 +170,7 @@ class registro:
                     return plantillas.pagina_registro_desconectado(formulario=l.render(), registro=mensaje)
 
 
-
+# clase donde definimos el logueo del usuario
 class login:
     def GET(self, name):
         try: 
@@ -205,7 +207,7 @@ class login:
                 web.header('Content-Type', 'text/html; charset=utf-8')
                 return plantillas.pagina_desconectado(formulario=l.render(), mensaje="Usuario incorrecto.")
 
-
+# clase para logout
 class logout:
     def GET(self):
         web.setcookie('user', web.cookies().user, -3600)
@@ -216,7 +218,7 @@ class logout:
         web.header('Content-Type', 'text/html; charset=utf-8')
         return plantillas.pagina_desconectado(formulario=l.render(), mensaje="")
 
-
+# clase para ver el perfil de usuario
 class ver_perfil:
     def GET(self):
         try: 
@@ -244,6 +246,7 @@ class ver_perfil:
             web.header('Content-Type', 'text/html; charset=utf-8')
             return plantillas.pagina_desconectado(formulario=l.render(), mensaje="Se ha producido algun error. Inicie sesion de nuevo.")
 
+# clase para editar el perfil de usuario
 class editar_perfil:
     def GET(self):
         try:
@@ -321,6 +324,7 @@ class editar_perfil:
             web.header('Content-Type', 'text/html; charset=utf-8')
             return plantillas.pagina_desconectado(formulario=l.render(), mensaje="Se ha producido algun error. Inicie sesion de nuevo.")
 
+# clase para ver las páginas más visitadas
 class mas_visitadas:
 
     def GET(self):
@@ -333,6 +337,7 @@ class mas_visitadas:
             web.header('Content-Type', 'text/html; charset=utf-8')
             return plantillas.pagina_desconectado(formulario=l.render(), mensaje="Se ha producido algun error. Inicie sesion de nuevo.")        
 
+# clase donde definimos el apartado de RSS
 class rss:
 
     def GET(self):
@@ -349,7 +354,7 @@ class rss:
             web.header('Content-Type', 'text/html; charset=utf-8')
             return plantillas.pagina_desconectado(formulario=l.render(), mensaje="Se ha producido algun error. Inicie sesion de nuevo.")     
 
-
+# clase donde trabajamos con Highcharts
 class highchart:
 
     def GET(self):
@@ -366,7 +371,7 @@ class highchart:
             web.header('Content-Type', 'text/html; charset=utf-8')
             return plantillas.pagina_desconectado(formulario=l.render(), mensaje="Se ha producido algun error. Inicie sesion de nuevo.")     
 
-
+# clase donde trabajamos con maps
 class mapa:
 
     def GET(self):
@@ -384,7 +389,7 @@ class mapa:
             return plantillas.pagina_desconectado(formulario=l.render(), mensaje="Se ha producido algun error. Inicie sesion de nuevo.")     
 
 
-
+# clase donde trabajamos con Twitter
 class twitter:
     def GET(self):
         try:
@@ -445,6 +450,7 @@ class twitter:
             web.header('Content-Type', 'text/html; charset=utf-8')
             return plantillas.pagina_desconectado(formulario=l.render(), mensaje="Se ha producido algun error. Inicie sesion de nuevo.")
 
+# clase donde trabajamos con los eventos de Twitter
 class eventos_twitter:
 
     def GET(self):
@@ -462,6 +468,40 @@ class eventos_twitter:
                     locations.append(tweet.coordinates['coordinates'][0])
 
             return plantillas.eventos_twitter(form= l.render(), tweets=tweets, locations=locations)
+
+
+# Añado los test
+import unittest
+
+class TestMethods(unittest.TestCase):
+
+  #test básicos comprbando strings
+  def test_upper(self):
+      self.assertEqual('foo'.upper(), 'FOO')
+  def test_isupper(self):
+      self.assertTrue('FOO'.isupper())
+      self.assertFalse('Foo'.isupper())
+  def test_split(self):
+      s = 'hello world'
+      self.assertEqual(s.split(), ['hello', 'world'])
+      # check that s.split fails when the separator is not a string
+      with self.assertRaises(TypeError):
+          s.split(2)
+
+  # test para comprobar que nos hemos conectado
+  def test_dbcon(self):
+      client = MongoClient()
+      db = client.usuarios
+  # test para compobar el conjunto de meses
+  def test_meses(self):
+      lista = [1,2,3,4,5,6,7,8,9,10,11,12]
+      self.assertListEqual(lista,meses)
+    
+    
+suite = unittest.TestLoader().loadTestsFromTestCase(TestMethods)
+unittest.TextTestRunner(verbosity=2).run(suite)
+
+
 
 
 if __name__ == "__main__":
