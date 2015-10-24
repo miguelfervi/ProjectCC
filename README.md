@@ -1,10 +1,3 @@
-# ProjectCC
+# Submódulo de la aplicación "Periódico interactivo"
 
-Los intregantes son:
-
-* José Cristóbal López Zafra
-* Miguel Fernández Villegas
-* Hans Manuel Grenner Noguerón
-* Yuan Tian
-
-
+Este submódulo es el correspondiente a la gestión de análisis de datos y estadisticas, para mejorar la aplicación y analizar tanto posibles irregularidades como mejora de la aplicación a través de datos númericos.
