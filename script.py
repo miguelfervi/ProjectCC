@@ -464,7 +464,34 @@ class eventos_twitter:
             return plantillas.eventos_twitter(form= l.render(), tweets=tweets, locations=locations)
 
 
+# Añado los test
+import unittest
+
+class TestMethods(unittest.TestCase):
+
+  #test básicos comprbando strings
+  def test_upper(self):
+      self.assertEqual('prueba'.upper(), 'PRUEBA')
+  def test_split(self):
+      s = 'hello world'
+      self.assertEqual(s.split(), ['hello', 'world'])
+      # check that s.split fails when the separator is not a string
+      with self.assertRaises(TypeError):
+          s.split(2)
+
+  # test para comprobar que nos hemos conectado
+  def test_dbcon(self):
+      client = MongoClient()
+      db = client.usuarios
+ 
+    
+    
+suite = unittest.TestLoader().loadTestsFromTestCase(TestMethods)
+unittest.TextTestRunner(verbosity=2).run(suite)
+
+
+
+
 if __name__ == "__main__":
     app.run()
-
 
