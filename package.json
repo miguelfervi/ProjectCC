@@ -9,6 +9,11 @@
 
   "keywords": ["CC, periodico"],
 
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+
   "scripts": {
     "test": "mocha"
   }

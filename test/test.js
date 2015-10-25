@@ -1,5 +1,10 @@
 var assert = require('assert');
 
+var chai = require('chai');//Biblioteca para Mocha
+var expect = chai.expect;
+chai.use(require('chai-fs'));
+
+
 objCalculator = {
   addNumber: function(a, b){
     return a + b;
@@ -45,6 +50,26 @@ describe('Test básicos', function() {
       done();
     });
   });
+
+
+
+  describe('Comprobamos archivos', function () {
+
+    it('El fichero principal existe', function (done) {
+      expect('script.py').to.be.a.file();
+      done();
+    });
+
+    it('Archivos de documentación "pycco" existen', function (done) {
+      expect('docs/script.html').to.be.a.file();
+      expect('docs/pycco.css').to.be.a.file();
+      done();
+    });
+
+  });
+
+
+
 
 
 
