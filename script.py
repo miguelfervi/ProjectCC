@@ -464,7 +464,7 @@ class eventos_twitter:
             return plantillas.eventos_twitter(form= l.render(), tweets=tweets, locations=locations)
 
 
-# Añado los test
+# Test
 import unittest
 
 class TestMethods(unittest.TestCase):
