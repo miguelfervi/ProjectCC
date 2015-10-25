@@ -23,11 +23,8 @@ urls = ( '/logout', 'logout',
     )
 
 # Consumer keys and access tokens, used for OAuth
-# Pendiente de arreglar (ocultar keys)
-consumer_key = 'UbeG6c5YaR1a7gZYdLqqr7fFN'
-consumer_secret = 'BTrE1bbvDz6SuxKxlKF1mHof955YheUjb7gzGoLk590fF4BpIQ'
-access_token = '519720537-MsyxcBoaLUES8U0ECtzinEQ9ivbTMRO4CHBLtk98'
-access_token_secret = 'XEhkECGK0z0uVuj9XfC1tMOeZxeSCvdReBzPxTyR1uEDS'
+from keys import *
+
 # OAuth process, using the keys and tokens
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
