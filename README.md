@@ -5,7 +5,11 @@
 
 Este submódulo es el correspondiente a la gestión de análisis de datos y estadisticas, para mejorar la aplicación y analizar tanto posibles irregularidades como mejora de la aplicación a través de datos númericos.
 
-Para realizar dicha tarea, voy a usar [Highcharts](http://www.highcharts.com/), una API libre para añadir a nuestros sitios web, gráficas para mostrart todo tipo de información.
+Este súbmodulo está bajo la licencia [GNU GENERAL PUBLIC LICENSE](https://github.com/miguelfervi/ProjectCC/blob/master/LICENSE) y será realizado por [Miguel Fernández Villegas](https://github.com/miguelfervi)
+
+##Herramienta usada
+
+Para realizar dicha tarea, voy a usar [Highcharts](http://www.highcharts.com/), una API libre para añadir a nuestros sitios web, gráficas para mostrar todo tipo de información y recolección de datos.
 
 También es capaz de mostrar Timeline e incluye Highmaps, donde tenemos un mapa mundial interactivo para recopilar datos acerca de las visitas a nuestra página entre muchas más funcionalidades.
 
