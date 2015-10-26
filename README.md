@@ -1,4 +1,4 @@
-# Submódulo de la aplicación "Periódico interactivo": Análisis de datos
+# Submódulo de la aplicación "Periódico interactivo": Análisis y representación de datos
 
 [![Test pasados](https://travis-ci.org/miguelfervi/ProjectCC.svg?branch=master)](https://travis-ci.org/miguelfervi/ProjectCC)
 
