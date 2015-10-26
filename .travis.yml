@@ -4,5 +4,9 @@ python:
   - '2.7'
 # command to install dependencies
 install: "pip install -r requirements.txt"
+before_install:
+  - npm install mocha --save-dev
+  - npm install chai
+  - npm install chai-fs
 # command to run tests
-script: npm install mocha --save-dev; npm install chai; npm install chai-fs;  npm test
+script:  npm test
