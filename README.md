@@ -9,7 +9,7 @@ Este súbmodulo está bajo la licencia [GNU GENERAL PUBLIC LICENSE](https://gith
 
 Este módulo llevará a cabo presentación de la información que el usuario necesite, para ofrecer esta información de una forma más amigable se generarán gráficas interactivas para mostrar los datos analizados. Estos datos pasarán por un proceso estadístico, en el que estudiaremos los datos obtenidos en nuestro análisis de datos.
 
-Para hacer el análisis de datos vamos a usar el lenguaje de programación R, y librerías de python para este propósito específico.
+Para hacer el análisis de datos vamos a usar el lenguaje de programación R, y librerías de python para este propósito específico, de forma que podamos refinar los datos que sean interesantes en el sitio web.
 
 Usaré una librería para pythonn que nos permite integrar R: [Rpy2](http://rpy.sourceforge.net/), esta librería permite introducir operaciones en R e integrarlas en Python.
 
