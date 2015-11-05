@@ -11,7 +11,7 @@ Este módulo llevará a cabo presentación de la información que el usuario nec
 
 Para hacer el análisis de datos vamos a usar el lenguaje de programación R, y librerías de python para este propósito específico, de forma que podamos refinar los datos que sean interesantes en el sitio web.
 
-Usaré una librería para pythonn que nos permite integrar R: [Rpy2](http://rpy.sourceforge.net/), esta librería permite introducir operaciones en R e integrarlas en Python.
+Usaré una librería para python que nos permite integrar R: [Rpy2](http://rpy.sourceforge.net/), esta librería permite introducir operaciones en R e integrarlas en Python.
 
 Para mostrar los resultados, voy a usar [Highcharts](http://www.highcharts.com/), una API libre para añadir a nuestros sitios web, gráficas para mostrar todo tipo de información y recolección de datos de forma que representemos gráficamente el trabajo realizado en R.
 
