@@ -7,11 +7,14 @@ Este submódulo es el correspondiente a la gestión de análisis de datos y esta
 
 Este súbmodulo está bajo la licencia [GNU GENERAL PUBLIC LICENSE](https://github.com/miguelfervi/ProjectCC/blob/master/LICENSE) y será realizado por [Miguel Fernández Villegas](https://github.com/miguelfervi)
 
-##Herramienta usada
+Este módulo llevará a cabo presentación de la información que el usuario necesite, para ofrecer esta información de una forma más amigable se generarán gráficas interactivas para mostrar los datos analizados. Estos datos pasarán por un proceso estadístico, en el que estudiaremos los datos obtenidos en nuestro análisis de datos.
 
-Para realizar dicha tarea, voy a usar [Highcharts](http://www.highcharts.com/), una API libre para añadir a nuestros sitios web, gráficas para mostrar todo tipo de información y recolección de datos.
+Para hacer el análisis de datos vamos a usar el lenguaje de programación R, y librerías de python para este propósito específico.
 
-También es capaz de mostrar Timeline e incluye Highmaps, donde tenemos un mapa mundial interactivo para recopilar datos acerca de las visitas a nuestra página entre muchas más funcionalidades.
+Usaré una librería para pythonn que nos permite integrar R: [Rpy2](http://rpy.sourceforge.net/), esta librería permite introducir operaciones en R e integrarlas en Python.
+
+Para mostrar los resultados, voy a usar [Highcharts](http://www.highcharts.com/), una API libre para añadir a nuestros sitios web, gráficas para mostrar todo tipo de información y recolección de datos de forma que representemos gráficamente el trabajo realizado en R.
+
 
 ##Motivación
 
@@ -19,8 +22,7 @@ El mundo contiene millones de datos, algo necesario en nuestra sociedad aunque a
 
 ##Objetivos a alcanzar
 
-Crear la infraestructura virtual y su posterior despliegue junto al periodico interactivo, para conseguir crear un servicio web más complejo y completo.
+El fin de este módulo es conseguir representar, gran cantidad de información, en la que se puede desechar y explotar datos concretos en la recolección los mismos, de una forma más correcta y sobre todo más visible para todos los usuarios y este submódulo se integrará en el [proyecto principal](https://github.com/ProyectCC/PeriodicoInteractivo).
 
-Conocer esta API y usarla adecuadamente.
 
 
