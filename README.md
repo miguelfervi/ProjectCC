@@ -24,5 +24,23 @@ El mundo contiene millones de datos, algo necesario en nuestra sociedad aunque a
 
 El fin de este módulo es conseguir representar, gran cantidad de información, en la que se puede desechar y explotar datos concretos en la recolección los mismos, de una forma más correcta y sobre todo más visible para todos los usuarios y este submódulo se integrará en el [proyecto principal](https://github.com/ProyectCC/PeriodicoInteractivo).
 
+##Integración continua
 
+Para la integración continua usaremos [Travis-CI](https://travis-ci.org).
+
+Travis nos proporciona integración continua y con Github es realmente fácil su uso.
+
+La configuración se realiza a partir del fichero .travis.yml en el directorio principal de nuestro repo. En este archivo añadimos, las versiones del lenguaje de programación usado, probar los test e instalar las dependencias.
+
+Puedes ver el estado actual del proyecto en el badge Build Status o accediendo a la página web generada con las resultados de integración de nuestro proyecto.
+
+El proceso que se sigue es el siguiente:
+
+Se hace un push en el proyecto
+Github envía una petición a Travis para que realice un nuevo build.
+Travis toma nuestro .travis.yml e instala las dependencias necesarias y checkea las versiones distintas del lenguaje usado
+
+Se ejecutan los test. Si alguno falla, se podría ejecutar la sección "after_failure" (y más adelante no desplegar el proyecto en el Paas e IaaS)
+
+##Test
 
