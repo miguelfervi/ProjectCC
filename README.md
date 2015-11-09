@@ -2,6 +2,7 @@
 
 [![Test pasados](https://travis-ci.org/miguelfervi/ProjectCC.svg?branch=master)](https://travis-ci.org/miguelfervi/ProjectCC)
 
+#Práctica 1
 
 Este submódulo es el correspondiente a la gestión de análisis de datos y estadisticas, para mejorar la aplicación y analizar tanto posibles irregularidades como mejora de la aplicación a través de datos númericos.
 
@@ -24,6 +25,7 @@ El mundo contiene millones de datos, algo necesario en nuestra sociedad aunque a
 
 El fin de este módulo es conseguir representar, gran cantidad de información, en la que se puede desechar y explotar datos concretos en la recolección los mismos, de una forma más correcta y sobre todo más visible para todos los usuarios y este submódulo se integrará en el [proyecto principal](https://github.com/ProyectCC/PeriodicoInteractivo).
 
+#Práctica 2
 ##Integración continua
 
 Para la integración continua usaremos [Travis-CI](https://travis-ci.org).
@@ -40,7 +42,31 @@ Se hace un push en el proyecto
 Github envía una petición a Travis para que realice un nuevo build.
 Travis toma nuestro .travis.yml e instala las dependencias necesarias y checkea las versiones distintas del lenguaje usado
 
-Se ejecutan los test. Si alguno falla, se podría ejecutar la sección "after_failure" (y más adelante no desplegar el proyecto en el Paas e IaaS)
+Se ejecutan los test. Si todo va correctamente nuestro badge se pondrá de color verde, y así podemos exportarlo, por ejemplo al principio de este archivo, la prueba de que nuestro repo se ha podido integrar de forma correcta.
 
 ##Test
+
+Para la realización de los test hemos usado un framework para realizar test que corre en Node.js, llamado Mocha, también hosteados en Github, pero no será la única herramienta usada, ya que añadiremos también Chai y Supertest.
+
+Chai es una biblioteca de aserciones para NodeJS y para el navegador, que integraremos con Mocha. Chai nos ayuda a realizar aserciones contra nuestro código. 
+
+Supertest es otra librería para hacer aserciones HTTP. Permite hacer pruebas HTTP de alto nivel y así poder compobar el funcionamiento de nuestro servidor. Los test con Supertest los haremos sólo en local, ya que no podemos desplegar el servidor en Travis para que realice los test.
+
+Los tests los podemos encontrar en test/test.js. Para realizarlos ejecutamos npm test.
+
+Para instalar Mocha y las distintas librerias:
+
+`sudo npm install mocha --save-dev`
+
+`sudo npm install chai`
+
+`sudo npm install chai-fs `
+
+`sudo npm install supertest`
+
+
+El procedimiento una vez instalado y preparado todo lo necesario para realizar los test es:
+
+Creamos el directorio [test](https://github.com/miguelfervi/ProjectCC/tree/master/test)
+y creamos el archivo [test.js](https://github.com/miguelfervi/ProjectCC/blob/master/test/test.js), después volvemos al directorio raíz y ejecutamos la siguiente orden, `npm test`y ya los test serán mostrando el éxito o fallo que pueda producirse.
 
