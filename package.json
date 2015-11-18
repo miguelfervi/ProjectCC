@@ -10,6 +10,7 @@
   "keywords": ["CC, periodico"],
 
   "devDependencies": {
+    "chai-js":"1.6.1",
     "mocha": "*"
   },
 
