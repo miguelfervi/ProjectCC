@@ -3,3 +3,4 @@ feedparser==5.2.1
 pymongo==3.0.3
 tweepy==3.4.0
 web.py==0.37
+chai==1.6.1
