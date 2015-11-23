@@ -5,7 +5,6 @@ import os
 import inspect
 
 from script import *
-from keys import *
 
 
 # test para compobar que la ruta a un archivo (o archivo) existe
@@ -70,12 +69,6 @@ class test (unittest.TestCase):
 
     def test_11(self):	
 	existe_clase(mapa)
-
-    def test_12(self):	
-	existe_clase(twitter)
-
-    def test_13(self):	
-	existe_clase(eventos_twitter)
 
     def test_14(self):	
 	test_dbcon()
