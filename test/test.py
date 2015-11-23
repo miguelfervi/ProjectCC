@@ -49,32 +49,32 @@ class test (unittest.TestCase):
 		query=posts.find({"user": "miguel"})
 		return query.count() == 1
 
-    def test_2(self):	
-	existe_clase(registro) 
-
-    def test_3(self):	
-	existe_clase(login)
-
-    def test_4(self):	
-	existe_clase(logout)
-
-    def test_5(self):	
-	existe_clase(ver_perfil)
-
-    def test_6(self):	
-	existe_clase(editar_perfil)
-
-    def test_7(self):	
-	existe_clase(mas_visitadas)
-
-    def test_8(self):	
-	existe_clase(rss)
-
-    def test_9(self):	
-	existe_clase(highchart)
-
-    def test_10(self):	
-	existe_clase(mapa)
+	    def test_2(self):	
+		existe_clase(registro) 
+	
+	    def test_3(self):	
+		existe_clase(login)
+	
+	    def test_4(self):	
+		existe_clase(logout)
+	
+	    def test_5(self):	
+		existe_clase(ver_perfil)
+	
+	    def test_6(self):	
+		existe_clase(editar_perfil)
+	
+	    def test_7(self):	
+		existe_clase(mas_visitadas)
+	
+	    def test_8(self):	
+		existe_clase(rss)
+	
+	    def test_9(self):	
+		existe_clase(highchart)
+	
+	    def test_10(self):	
+		existe_clase(mapa)
 
    
 
