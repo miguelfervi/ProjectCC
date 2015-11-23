@@ -18,6 +18,7 @@ def existe(ruta):
 # test para comprobar que existe una clase
 def existe_clase(clase):
 	try:
+		self.assertTrue(clase)
 		return  type(clase)
 	except:
 		return 0
