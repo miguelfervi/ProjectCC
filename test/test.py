@@ -26,49 +26,54 @@ def existe_clase(clase):
 def test_dbcon():
 	return db==client.usuarios
 
-# test para compobar el conjunto de meses
-def test_meses():
-	lista = [1,2,3,4,5,6,7,8,9,10,11,12]
-	return lista==meses
-
-
-# Clase en la que realizamos los test
 class test (unittest.TestCase):
+	# Inserción de un usuario en la base de datos
+	def test_1(self):
+		post = {"user": "miguel",
+		    	"nombre": "miguel",
+		    	"apellidos": "fernandez",
+		    	"correo": "miguel@correo.es",
+		    	"dia": "5",
+		    	"mes": "7",
+		    	"anio": "1991",
+			"direccion": "Calle secreta prueba",
+		    	"password": "123456",
+		    	"pago": "VISA",
+		    	"visa": "1111-1111-1111-1111",
+		    	}
 
-    def test_1(self):	
-	existe("script.py")
+		posts=db.posts
+		post_id = posts.insert(post)    
 
-    def test_2_1(self):	
-	existe("docs/pycco.css")
+		#Comprobamos si realmente se ha insertado en la base de datos
+		query=posts.find({"user": "miguel"})
+		return query.count() == 1
 
-    def test_2_2(self):	
-	existe("docs/script.html")
-
-    def test_3(self):	
+    def test_2(self):	
 	existe_clase(registro) 
 
-    def test_4(self):	
+    def test_3(self):	
 	existe_clase(login)
 
-    def test_5(self):	
+    def test_4(self):	
 	existe_clase(logout)
 
-    def test_6(self):	
+    def test_5(self):	
 	existe_clase(ver_perfil)
 
-    def test_7(self):	
+    def test_6(self):	
 	existe_clase(editar_perfil)
 
-    def test_8(self):	
+    def test_7(self):	
 	existe_clase(mas_visitadas)
 
-    def test_9(self):	
+    def test_8(self):	
 	existe_clase(rss)
 
-    def test_10(self):	
+    def test_9(self):	
 	existe_clase(highchart)
 
-    def test_11(self):	
+    def test_10(self):	
 	existe_clase(mapa)
 
    
