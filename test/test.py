@@ -23,7 +23,7 @@ def existe_clase(clase):
 	except:
 		return 0
 
-# test para comprobar que nos hemos conectado
+# test para comprobar que hemos conectado con la base de datos
 def test_dbcon():
 	return db==client.usuarios
 
@@ -59,10 +59,6 @@ class test (unittest.TestCase):
 	    def test_compara_1(self):
         	self.assertNotEqual(login,logout)
         	
-             def test_compara_2(self):
-        	self.assertNotEqual(ver_perfil,editar_perfil)
-	
-
-  
+    
 if __name__ == "__main__":
     unittest.main()
