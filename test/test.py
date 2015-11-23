@@ -70,10 +70,10 @@ class test (unittest.TestCase):
     def test_11(self):	
 	existe_clase(mapa)
 
-    def test_14(self):	
+    def test_12(self):	
 	test_dbcon()
 
-    def test_15(self):	
+    def test_13(self):	
 	test_meses()
 
 
