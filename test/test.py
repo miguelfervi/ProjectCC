@@ -21,9 +21,6 @@ def existe_clase(clase):
 	except:
 		return 0
 
-# test para comprobar que nos hemos conectado
-def test_dbcon():
-	return db==client.usuarios
 
 # test para compobar el conjunto de meses
 def test_meses():
