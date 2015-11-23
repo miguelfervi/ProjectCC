@@ -55,6 +55,13 @@ class test (unittest.TestCase):
 	
 	    def test_9(self):	
 		existe_clase(mapa)
+		
+	    def test_compara_1(self):
+        	self.assertNotEqual(login,logout)
+        	
+             def test_compara_2(self):
+        	self.assertNotEqual(ver_perfil,editar_perfil)
+	
 
   
 if __name__ == "__main__":
