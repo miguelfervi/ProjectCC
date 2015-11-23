@@ -18,8 +18,8 @@ def existe(ruta):
 # test para comprobar que existe una clase
 def existe_clase(clase):
 	try:
-		#self.assertTrue(clase)
-		return  type(clase)
+		
+		return  self.assertTrue(clase)
 	except:
 		return 0
 
@@ -29,8 +29,9 @@ def test_dbcon():
 
 class test (unittest.TestCase):
 	
-	    def test_1(self):	
-		existe_clase(registro) 
+	    def test_1(self):
+	    	 existe_clase(registro) 
+	    	
 	
 	    def test_2(self):	
 		existe_clase(login)
