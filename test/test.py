@@ -30,9 +30,7 @@ def test_dbcon():
 class test (unittest.TestCase):
 	
 	    def test_1(self):
-	    	 #existe_clase(registro) 
-	    	 existe_clase(pepe) 
-	    	
+	    	 existe_clase(registro) 
 	
 	    def test_2(self):	
 		existe_clase(login)
