@@ -7,6 +7,7 @@ import inspect
 from script import *
 
 
+
 # test para compobar que la ruta a un archivo (o archivo) existe
 def existe(ruta):
     if os.stat(ruta):
@@ -21,6 +22,9 @@ def existe_clase(clase):
 	except:
 		return 0
 
+# test para comprobar que nos hemos conectado
+def test_dbcon():
+	return db==client.usuarios
 
 # test para compobar el conjunto de meses
 def test_meses():
@@ -67,12 +71,7 @@ class test (unittest.TestCase):
     def test_11(self):	
 	existe_clase(mapa)
 
-    def test_12(self):	
-	test_dbcon()
-
-    def test_13(self):	
-	test_meses()
-
+   
 
 if __name__ == "__main__":
     unittest.main()
