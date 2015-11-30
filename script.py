@@ -463,7 +463,7 @@ class eventos_twitter:
 
             return plantillas.eventos_twitter(form= l.render(), tweets=tweets, locations=locations)
 
-'''
+
 # Test
 import unittest
 
@@ -490,7 +490,7 @@ suite = unittest.TestLoader().loadTestsFromTestCase(TestMethods)
 unittest.TextTestRunner(verbosity=2).run(suite)
 
 
-'''
+
 
 if __name__ == "__main__":
     app.run()
