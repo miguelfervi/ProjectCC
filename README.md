@@ -70,3 +70,13 @@ El procedimiento una vez instalado y preparado todo lo necesario para realizar l
 Creamos el directorio [test](https://github.com/miguelfervi/ProjectCC/tree/master/test)
 y creamos el archivo [test.js](https://github.com/miguelfervi/ProjectCC/blob/master/test/test.js), después volvemos al directorio raíz y ejecutamos la siguiente orden, `npm test`y ya los test serán mostrando el éxito o fallo que pueda producirse.
 
+#Práctica 3
+
+
+##Plataforma como servicio (Paas): Heroku
+
+
+[Heroku](https://www.heroku.com/platform) es una plataforma como servicio ("Platform as a Service" o PaaS) de computación en la nube que soporta distintos lenguajes de programación, python, que es el que usamos, entre ellos, por tanto, me he decidido a usarlo como Paas para nuestra aplicación.
+
+Plataforma con gran cantidad de características:
+
