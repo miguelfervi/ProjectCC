@@ -484,10 +484,13 @@ class TestMethods(unittest.TestCase):
       client = MongoClient()
       db = client.usuarios
  
+
     
     
 suite = unittest.TestLoader().loadTestsFromTestCase(TestMethods)
 unittest.TextTestRunner(verbosity=2).run(suite)
+
+#Fin test
 
 '''
 
