@@ -490,7 +490,6 @@ class TestMethods(unittest.TestCase):
 suite = unittest.TestLoader().loadTestsFromTestCase(TestMethods)
 unittest.TextTestRunner(verbosity=2).run(suite)
 
-#Fin test
 
 '''
 
