@@ -18,8 +18,8 @@ urls = ( '/logout', 'logout',
         '/highchart', 'highchart',
         '/mapa', 'mapa',
         '/twitter', 'twitter',
-        '/eventos_twitter', 'eventos_twitter',
-        '/(.*)', 'login' 
+        '/eventos_twitter', 'eventos_twitter', 
+    '/', 'highchart'
     )
 
 # Consumer keys and access tokens, used for OAuth
@@ -178,9 +178,9 @@ class login:
             web.setcookie('pagina1', "login")
             return plantillas.pagina_conectado(formulario=mensaje)
         except:
-        	l=form_log()
-        	web.header('Content-Type', 'text/html; charset=utf-8')
-        	return plantillas.pagina_desconectado(formulario=l.render(), mensaje="")
+            l=form_log()
+            web.header('Content-Type', 'text/html; charset=utf-8')
+            return plantillas.pagina_desconectado(formulario=l.render(), mensaje="")
 
     def POST(self,name):
         l=form_log()
@@ -355,16 +355,16 @@ class highchart:
     def GET(self):
         res=""
         web.header('Content-Type', 'text/html; charset=utf-8')
-        try: 
-            res="Bienvenido usuario: %s " % (web.cookies().user)
-            web.setcookie('pagina3', web.cookies().pagina2)
-            web.setcookie('pagina2', web.cookies().pagina1)
-            web.setcookie('pagina1', "highchart")
-            return plantillas.highchart(formulario=res)
-        except:
-            l=form_log()
-            web.header('Content-Type', 'text/html; charset=utf-8')
-            return plantillas.pagina_desconectado(formulario=l.render(), mensaje="Se ha producido algun error. Inicie sesion de nuevo.")     
+        #try: 
+        #    res="Bienvenido usuario: %s " % (web.cookies().user)
+        #    web.setcookie('pagina3', web.cookies().pagina2)
+        #    web.setcookie('pagina2', web.cookies().pagina1)
+        #    web.setcookie('pagina1', "highchart")
+        return plantillas.highchart(formulario=res)
+        #except:
+        #    l=form_log()
+        #    web.header('Content-Type', 'text/html; charset=utf-8')
+        #    return plantillas.pagina_desconectado(formulario=l.render(), mensaje="Se ha producido algun error. Inicie sesion de nuevo.")     
 
 
 class mapa:
