@@ -9,7 +9,7 @@ cd ProjectCC
 # El toolbelt de Heroku debe estar instalado y configurado
 # wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 # heroku login
-heroku apps:create --region eu --buildpack heroku/python periodicointeractivo-modulodato
+heroku apps:create --region eu --buildpack heroku/python periodicointeractivo-modudato
 
 #echo "web: python script.py $PORT" > Procfile # No hace falta, se incluye en el repo
 
