@@ -1,7 +1,7 @@
 # Submódulo de la aplicación "Periódico interactivo": Análisis y representación de datos
 
 [![Test pasados](https://travis-ci.org/miguelfervi/ProjectCC.svg?branch=master)](https://travis-ci.org/miguelfervi/ProjectCC)
-[![Heroku Status](https://heroku-badge.herokuapp.com/?app=periodicointeractivo&style=flat)](https://periodicointeractivo-modudatos.herokuapp.com/)
+[![Heroku Status](https://heroku-badge.herokuapp.com/?app=periodicointeractivo&style=flat)](https://periodicointeractivo-modudato.herokuapp.com/)
 
 #Práctica 1
 
