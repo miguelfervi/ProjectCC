@@ -94,13 +94,32 @@ Algunos de sus competidores son los siguientes:
 
 [Bluemix](https://console.ng.bluemix.net/)
 
-
 [Google App Engine](https://cloud.google.com/appengine/docs)
-
 
 [OpenShift](https://www.openshift.com/)
 
-
 [Windows Azure](https://azure.microsoft.com/es-es/)
+
+A continuación se va a realizar un pequeño tutorial sobre la creación y el despliegue en Heroku.
+Para empezar debemos situarnos en el directorio de nuestro proyecto e instalar [toolbelt](https://toolbelt.heroku.com/) en caso de no tenerlo.
+
+Después creamos en nuestra consola de comandos nuestro proyecto en Heroku 
+`heroku apps:create --region eu --buildpack heroku/python periodicointeractivo1-8` el 1-8 es para que no produzca conflictos con el resto de mi equipo de trabajo.
+
+Tambiién asignamos el puerto 8080 para usarlo al desplegar la aplicación
+`heroku config:set PORT=8080`
+
+Y por último guardamos los cambios con git. En el caso de Heroku con
+`git push heroku master`, pero nosotros antes pasaremos por Travis y después si todo es correcto desplegaremos la aplicación.
+
+Como se puede observar [aquí](https://gyazo.com/7c7bec97c6184d7f658c1e2030190bf3.png) el PaaS está asociado y configurado con GitHub. También hemos activado la opción de que para desplegarse, deberá haber pasado con éxito los test en CI.
+
+Por último aquí se adjunta una captura de como ha sido desplegada la aplicación y por último el enlace de la aplicación desplegada.
+
+
+
+
+
+
 
 
