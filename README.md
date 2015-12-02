@@ -76,7 +76,24 @@ y creamos el archivo [test.js](https://github.com/miguelfervi/ProjectCC/blob/mas
 ##Plataforma como servicio (Paas): Heroku
 
 
-[Heroku](https://www.heroku.com/platform) es una plataforma como servicio ("Platform as a Service" o PaaS) de computación en la nube que soporta distintos lenguajes de programación, python, que es el que usamos, entre ellos, por tanto, me he decidido a usarlo como Paas para nuestra aplicación.
+[Heroku](https://www.heroku.com/platform) es una plataforma como servicio ("Platform as a Service" o PaaS) de computación en la nube que soporta distintos lenguajes de programación, Python, en concreto, que es el que usamos, por tanto, me he decidido a usarlo como Paas para nuestra aplicación.
 
-Plataforma con gran cantidad de características:
+Plataforma con gran cantidad de características, aunque solo mencionaré algunas de ellas.
+
+* [X]Despliegue instanteneo realizado con Git push, la Build por Heroku es realizada por tus build script
+* [X]Gran cantidad de Add-on de recursos como pueden ser: aplicaciones, bases de datos, entre otros
+* [X]Escalado de procesos, cada componente de la aplicación se trata independientemente sin afectar a la funcionalidad y el rendimiento del resto.
+* [X]Aislamiento, cada proceso (nombrado dyno) está completamente aislado de otro
+
+
+Heroku te permite tener 5 contenedores gratuitos en tu cuenta sin ningún tipo de coste adicional
+
+Algunos de sus competidores son los siguientes:
+
+[AWS Elastic Beanstalk](https://aws.amazon.com/es/)
+[Bluemix](https://console.ng.bluemix.net/)
+[Google App Engine](https://cloud.google.com/appengine/docs)
+[OpenShift](https://www.openshift.com/)
+[Windows Azure](https://azure.microsoft.com/es-es/)
+
 
