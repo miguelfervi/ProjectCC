@@ -83,10 +83,10 @@ Plataforma con gran cantidad de características, aunque solo mencionaré alguna
 * [X] Despliegue instanteneo realizado con Git push, la Build por Heroku es realizada por tus build script
 * [X] Gran cantidad de Add-on de recursos como pueden ser: aplicaciones, bases de datos, entre otros
 * [X] Escalado de procesos, cada componente de la aplicación se trata independientemente sin afectar a la funcionalidad y el rendimiento del resto.
-* [X] Aislamiento, cada proceso (nombrado dyno) está completamente aislado de otro
+* [X] Aislamiento, cada proceso (nombrado dyno o contenedor) está completamente aislado de otro
 
 
-Heroku te permite tener 5 contenedores gratuitos en tu cuenta sin ningún tipo de coste adicional
+Heroku te permite tener 5 contenedores gratuitos en tu cuenta sin ningún tipo de coste adicional. También permite conectarse con GitHub, lo que facilita tener el Paas siempre actualizado a nuestra versión de GitHub.
 
 Algunos de sus competidores son los siguientes:
 
