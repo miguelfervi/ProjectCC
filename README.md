@@ -80,10 +80,10 @@ y creamos el archivo [test.js](https://github.com/miguelfervi/ProjectCC/blob/mas
 
 Plataforma con gran cantidad de características, aunque solo mencionaré algunas de ellas.
 
-* [X]Despliegue instanteneo realizado con Git push, la Build por Heroku es realizada por tus build script
-* [X]Gran cantidad de Add-on de recursos como pueden ser: aplicaciones, bases de datos, entre otros
-* [X]Escalado de procesos, cada componente de la aplicación se trata independientemente sin afectar a la funcionalidad y el rendimiento del resto.
-* [X]Aislamiento, cada proceso (nombrado dyno) está completamente aislado de otro
+* [X] Despliegue instanteneo realizado con Git push, la Build por Heroku es realizada por tus build script
+* [X] Gran cantidad de Add-on de recursos como pueden ser: aplicaciones, bases de datos, entre otros
+* [X] Escalado de procesos, cada componente de la aplicación se trata independientemente sin afectar a la funcionalidad y el rendimiento del resto.
+* [X] Aislamiento, cada proceso (nombrado dyno) está completamente aislado de otro
 
 
 Heroku te permite tener 5 contenedores gratuitos en tu cuenta sin ningún tipo de coste adicional
@@ -91,9 +91,16 @@ Heroku te permite tener 5 contenedores gratuitos en tu cuenta sin ningún tipo d
 Algunos de sus competidores son los siguientes:
 
 [AWS Elastic Beanstalk](https://aws.amazon.com/es/)
+
 [Bluemix](https://console.ng.bluemix.net/)
+
+
 [Google App Engine](https://cloud.google.com/appengine/docs)
+
+
 [OpenShift](https://www.openshift.com/)
+
+
 [Windows Azure](https://azure.microsoft.com/es-es/)
 
 
