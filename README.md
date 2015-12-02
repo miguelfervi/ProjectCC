@@ -104,7 +104,7 @@ A continuación se va a realizar un pequeño tutorial sobre la creación y el de
 Para empezar debemos situarnos en el directorio de nuestro proyecto e instalar [toolbelt](https://toolbelt.heroku.com/) en caso de no tenerlo.
 
 Después creamos en nuestra consola de comandos nuestro proyecto en Heroku 
-`heroku apps:create --region eu --buildpack heroku/python periodicointeractivo1-8` el 1-8 es para que no produzca conflictos con el resto de mi equipo de trabajo.
+`heroku apps:create --region eu --buildpack heroku/python periodicointeractivo-modudato` el modudato es para que no produzca conflictos con el resto de mi equipo de trabajo y para señalar que es mi parte del submódulo.
 
 Tambiién asignamos el puerto 8080 para usarlo al desplegar la aplicación
 `heroku config:set PORT=8080`
