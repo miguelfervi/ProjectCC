@@ -114,9 +114,12 @@ Y por último guardamos los cambios con git. En el caso de Heroku con
 `git push heroku master`, pero nosotros antes pasaremos por Travis y después si todo es correcto desplegaremos la aplicación.
 
 Como se puede observar [aquí](https://gyazo.com/7c7bec97c6184d7f658c1e2030190bf3.png) el PaaS está asociado y configurado con GitHub. También hemos activado la opción de que para desplegarse, deberá haber pasado con éxito los test en CI.
+En el momento que cambiemos algo del repositorio y lo subamos a GitHub, pasa por Travis CI y si el resultado tiene éxito lo despliega en Heroku, en el caso de que Travis falle, no se desplegará en Heroku.
 
 Por último aquí se adjunta una captura de como ha sido [desplegada una vez finalizado](https://gyazo.com/edfe5b2c38a23da46edac725d1090614.png) la aplicación y por último el enlace de la aplicación desplegada.
 [Enlace a la aplicación en Heroku](https://periodicointeractivo-modudato.herokuapp.com/)
+
+
 
 
 
