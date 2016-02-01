@@ -126,13 +126,13 @@ Por último aquí se adjunta una captura de como ha sido [desplegada una vez fin
 
 Antes de desplegarse a producción, las aplicaciones tendrá que probarse en un entorno aislado. Para ello se usa Docker, creando un entorno de pruebas para la aplicación. Además se descarga y se deja preaparado para el despliegue de la aplicación (sólo con ejecutar python home/PeriodicoInteractivo/script.py). El contenedor está disponible en [DockerHub](https://hub.docker.com/r/miguelfervi/ubuntu-periodicointeractivo/), enlazado a un [repositorio](https://github.com/miguelfervi/ubuntu-PeriodicoInteractivo) que actualizará el contenedor cada vez que se realicen cambios. Para descargarlo simplemente habrá que ejecutar:
 
-sudo docker pull miguelfervi/ubuntu-periodicointeractivo
+`sudo docker pull miguelfervi/ubuntu-periodicointeractivo`
 
 y para desplegarlo:
 
 `sudo docker run -t -i miguelfervi/ubuntu-periodicointeractivo`
 
-Imagen del contenedor descargado y desplegado: 
+Imagen del contenedor descargado y desplegado: ![Desplegado](https://gyazo.com/afcb2ae6e9e7417dfe050e8dd58b553d.png)
 
 
 
