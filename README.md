@@ -130,9 +130,9 @@ sudo docker pull miguelfervi/ubuntu-periodicointeractivo
 
 y para desplegarlo:
 
-sudo docker run -t -i miguelfervi/ubuntu-periodicointeractivo
+`sudo docker run -t -i miguelfervi/ubuntu-periodicointeractivo`
 
-Imagen del contenedor descargado y desplegado: captura
+Imagen del contenedor descargado y desplegado: 
 
 
 
